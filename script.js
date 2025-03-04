@@ -7,11 +7,13 @@ let clickCount = 0;  // 记录点击 No 的次数
 
 // No 按钮的文字变化
 const noTexts = [
-    "？你认真的吗…", 
-    "要不再想想？", 
-    "不许选这个！ ", 
-    "我会很伤心…", 
-    "不行:("
+    "？路小染你点错了", 
+    "你真点的这个啊", 
+    "再想想！ ", 
+    "你小时候不是这么说的", 
+    "看着我的眼睛",
+    "再想想啊，路小染",
+    "不许选这个！",
 ];
 
 // No 按钮点击事件
@@ -32,7 +34,7 @@ noButton.addEventListener("click", function() {
     questionText.style.transform = `translateY(-${moveUp}px)`;
 
     // No 文案变化（前 5 次变化）
-    if (clickCount <= 5) {
+    if (clickCount <= 7) {
         noButton.innerText = noTexts[clickCount - 1];
     }
 
